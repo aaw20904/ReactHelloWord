@@ -1,10 +1,24 @@
-
+// main.js
+import MyComponent from '../js/MyComponent.js';
     let myApp={};
 
+  myApp.Profile = function () {
+    return(
+       <img
+          src="https://i.imgur.com/MK3eW3As.jpg"
+          alt="Katherine Johnson"
+        />
+    )
+  }
 
    myApp.App  = () => {
     return(
-      <h2> helloWord! </h2>
+        <section>
+      <h1>Amazing scientists</h1>
+      <myApp.Profile />
+      <myApp.Profile />
+      <myApp.Profile />
+    </section>
     )
     };
 
