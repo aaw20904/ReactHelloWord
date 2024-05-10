@@ -1,5 +1,7 @@
 // main.js
-import MyComponent from '../js/MyComponent.js';
+
+import MyComponent from "./MyComponent";
+
     let myApp={};
 
   myApp.Profile = function () {
@@ -12,12 +14,11 @@ import MyComponent from '../js/MyComponent.js';
   }
 
    myApp.App  = () => {
+    console.log("function is:",MyComponent)
     return(
         <section>
-      <h1>Amazing scientists</h1>
       <myApp.Profile />
-      <myApp.Profile />
-      <myApp.Profile />
+      <MyComponent />
     </section>
     )
     };
