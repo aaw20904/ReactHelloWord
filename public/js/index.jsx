@@ -1,6 +1,6 @@
 // main.js
 
-import MyComponent from "./MyComponent";
+import { HelloWord, MyComponent } from "./MyComponent";
 
     let myApp={};
 
@@ -17,8 +17,9 @@ import MyComponent from "./MyComponent";
     console.log("function is:",MyComponent)
     return(
         <section>
-      <myApp.Profile />
       <MyComponent />
+      <HelloWord />
+      
     </section>
     )
     };
