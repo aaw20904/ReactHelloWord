@@ -14,12 +14,18 @@ import { HelloWord, MyComponent } from "./MyComponent";
   }
 
    myApp.App  = () => {
+    const styles ={
+      one:{backgroundColor:"yellow", color:"blue"},
+      two:{backgroundColor:"blue", color:"yellow"}
+    } 
+   const time = new Date().toLocaleTimeString();
     console.log("function is:",MyComponent)
     return(
         <section>
       <MyComponent />
-      <HelloWord />
-      
+      <HelloWord par={time} />
+      <h4 style={styles.one}> ТАК </h4>
+      <h4 style={styles.two}> ЮЩЕНКО </h4>
     </section>
     )
     };
