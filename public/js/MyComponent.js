@@ -8,7 +8,13 @@
  
     )
   }
-  function HelloWord({par="helloword"}){
+  function HelloWord({par="helloword", x="y"}){
+    if(x=="ok")
+    {
+      return(
+        <h1>"OKAY"</h1>
+      )
+    }
     return(
       <h2 className="text-danger">{par}</h2>
     );

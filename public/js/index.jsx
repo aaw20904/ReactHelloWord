@@ -23,7 +23,7 @@ import { HelloWord, MyComponent } from "./MyComponent";
     return(
         <section>
       <MyComponent />
-      <HelloWord par={time} />
+      <HelloWord par={time} x="uuu"/>
       <h4 style={styles.one}> ТАК </h4>
       <h4 style={styles.two}> ЮЩЕНКО </h4>
     </section>
